@@ -1,0 +1,18 @@
+
+.bio_wrapper {
+	width: 470px;
+	height: 470px;
+    background-color: #FFFFFF;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    margin: -235px 0 0 -235px;
+    border: 1px solid #f00;
+    text-align: center;
+}
+
+.bio_header img {
+    width: 200px;
+    height: 200px;
+    border: 1px #FFFFFF;
+}
