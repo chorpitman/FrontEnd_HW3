@@ -2,6 +2,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
     font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
     color: #000;
 }
@@ -15,6 +16,7 @@ article,
 header,
 figure,
 figcaption,
+section,
 footer {
     margin: 0;
     padding: 0;
@@ -72,3 +74,92 @@ footer {
     color: #26C17E;
 }
 
+/*
+inner style
+*/
+
+.container {
+    max-width: 900px;
+    border: 10px solid chartreuse;
+    padding: 40px 40px 0;
+}
+
+/*INFO SECTION */
+
+/*about*/
+#about {
+    border: 1px solid #f00;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+/*education*/
+#education {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+#education div {
+    display: inline;
+}
+
+#education h2 {
+    margin-top: 0;
+}
+
+#education div {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+/*experience*/
+#experience {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+#experience h2 {
+    margin-top: 0;
+}
+
+/*skills*/
+#skills {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+#skills h2 {
+    margin-top: 0;
+}
+
+/*portfolio*/
+#portfolio {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+#portfolio h2 {
+    margin-top: 0;
+}
+
+/*contacts*/
+#contacts {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+#contacts h2 {
+    margin-top: 0;
+}
+
+/*feedback*/
+#feedback {
+    border: 1px solid #f00;
+    margin-top: 40px;
+}
+
+#feedback h2 {
+    margin-top: 0;
+}
