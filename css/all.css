@@ -98,18 +98,21 @@ inner style
 
 .content-text {
     margin: 0;
-    padding-top: 50px;
 }
 
 /*education*/
 #education {
     margin-top: 40px;
+    padding-bottom: 10px;
     display: inline-block;
     border: 1px solid #f00;
 }
 
+#education article:nth-child(2n+1){
+padding-top: 10px;
+}
+
 .education {
-    padding-top: 50px;
     display: inline-flex;
 }
 
@@ -152,6 +155,7 @@ inner style
 }
 
 
+
 /*skills*/
 #skills {
     border: 1px solid #f00;
@@ -184,7 +188,8 @@ inner style
 /*
 additional fonts style
 */
-.content-heading {
+.content-head {
+    padding-bottom: 50px;
     margin: 0;
     font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', 'sans-serif';
 }
