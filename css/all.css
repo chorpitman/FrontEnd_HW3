@@ -79,6 +79,7 @@ inner style
 */
 
 .container {
+    /*todo max width*/
     max-width: 900px;
     border: 10px solid chartreuse;
     padding: 40px 40px 0;
@@ -101,8 +102,31 @@ inner style
     margin-top: 40px;
 }
 
-#education div {
-    display: inline;
+.education {
+    display: inline-table;
+}
+
+.education-year {
+    /*width: 10%;*/
+    background-color: #26C17E;
+    float: left;
+    position: absolute;
+}
+
+.education-year li {
+    list-style-type: none;
+}
+
+.education-year ul {
+    padding: 0;
+    margin: 0;
+}
+
+.education-title {
+    float: right;
+    /*width: 90%;*/
+    background-color: blue;
+    border: 1px solid #f00;
 }
 
 #education h2 {
@@ -110,7 +134,6 @@ inner style
 }
 
 #education div {
-    border: 1px solid #f00;
     margin-top: 40px;
 }
 
