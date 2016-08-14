@@ -104,12 +104,11 @@ inner style
 #education {
     margin-top: 40px;
     padding-bottom: 10px;
-    display: inline-block;
     border: 1px solid #f00;
 }
 
-#education article:nth-child(2n+1){
-padding-top: 10px;
+#education article:nth-child(2n+1) {
+    padding-top: 10px;
 }
 
 .education {
@@ -154,14 +153,11 @@ padding-top: 10px;
     margin-top: 40px;
 }
 
-
-
 /*skills*/
 #skills {
     border: 1px solid #f00;
     margin-top: 40px;
 }
-
 
 /*portfolio*/
 #portfolio {
@@ -169,21 +165,17 @@ padding-top: 10px;
     margin-top: 40px;
 }
 
-
 /*contacts*/
 #contacts {
     border: 1px solid #f00;
     margin-top: 40px;
 }
 
-
 /*feedback*/
 #feedback {
     border: 1px solid #f00;
     margin-top: 40px;
 }
-
-
 
 /*
 additional fonts style
