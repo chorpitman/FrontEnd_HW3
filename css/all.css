@@ -152,12 +152,37 @@ inner style
     border: 1px solid #f00;
     margin-top: 40px;
 }
+
 .experience-wrapper {
     display: flex;
 }
-.experience-info {
-    margin-right: 10px;
+
+.experience-wrapper:nth-child(2n+1) {
+    border-top: 1px solid #f00;
+    padding-top: 15px;
 }
+
+.experience-info {
+    width: 30%;
+}
+
+.experience-info h4 {
+    margin: 0;
+    font: 16px/19px 'open_sansbold', 'Arial', 'Tahoma';
+}
+
+.experience h4 {
+    margin: 0;
+    font: 16px/19px 'open_sansbold', 'Arial', 'Tahoma';
+    padding-left: 10px;
+}
+
+.experience p {
+    margin: 0;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
 /*skills*/
 #skills {
     border: 1px solid #f00;
