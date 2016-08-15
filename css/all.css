@@ -152,7 +152,12 @@ inner style
     border: 1px solid #f00;
     margin-top: 40px;
 }
-
+.experience-wrapper {
+    display: flex;
+}
+.experience-info {
+    margin-right: 10px;
+}
 /*skills*/
 #skills {
     border: 1px solid #f00;
