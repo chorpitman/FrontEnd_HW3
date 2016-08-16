@@ -195,6 +195,19 @@ inner style
     margin-top: 40px;
 }
 
+.portfolio-content-wrapper {
+    display: block;
+}
+
+.portfolio-content-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-content-wrapper li {
+    display: inline;
+}
+
 /*contacts*/
 #contacts {
     border: 1px solid #f00;
