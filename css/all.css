@@ -195,10 +195,6 @@ inner style
     margin-top: 40px;
 }
 
-.portfolio-content-wrapper {
-    display: block;
-}
-
 .portfolio-content-wrapper ul {
     margin: 0;
     padding: 0;
@@ -218,6 +214,10 @@ inner style
 #feedback {
     border: 1px solid #f00;
     margin-top: 40px;
+}
+
+.feedback-wrapper {
+    display: flex;
 }
 
 /*
