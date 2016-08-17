@@ -70,7 +70,7 @@ footer {
     padding-top: 10px;
 }
 
-.bio-footer a {
+.bio-footer a, .feedback-user-photo-description a {
     color: #26C17E;
 }
 
@@ -216,7 +216,52 @@ inner style
     margin-top: 40px;
 }
 
+.test-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .feedback-wrapper {
+    border: solid red 1px;
+    margin-bottom: 30px;
+}
+
+.feedback-wrapper p {
+    font: 12px 'open sans light';
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-wrapper li {
+    list-style-type: none;
+}
+
+.feedback__user__photo {
+    order: 2;
+    width: 10%;
+}
+
+.feedback__user__photo img {
+    height: 50px;
+    width: 50px;
+}
+
+.feedback__area {
+    margin: 0;
+    padding: 15px;
+    order: 1;
+    width: 100%;
+}
+
+.feedback-user-photo-description {
+    order: 3;
+    width: 90%;
+    align-items: center;
     display: flex;
 }
 
