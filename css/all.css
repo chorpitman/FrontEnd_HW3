@@ -79,10 +79,12 @@ inner style
 */
 
 .container {
+    display: flex;
+    flex-flow: row nowrap;
     /*todo max width*/
-    max-width: 900px;
+    max-width: 1150px;
     border: 10px solid chartreuse;
-    padding: 40px;
+    /*padding: 40px;*/
 }
 
 /*INFO SECTION */
@@ -94,6 +96,14 @@ inner style
 
 #about h2 {
 
+}
+
+.content {
+    order: 2;
+    max-width: 900px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
 }
 
 .content-text {
@@ -272,4 +282,47 @@ additional fonts style
     padding-bottom: 50px;
     margin: 0;
     font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', 'sans-serif';
+}
+
+
+/*navigarion*/
+#navigation {
+    min-height: 100%;
+    width: 250px;
+    /*background-color: chocolate;*/
+    padding: 0;
+    margin: 0;
+    order: 1;
+    border: 1px solid #f00;
+}
+
+.navi-photo img{
+    height: 100px;
+    width: 100px;
+}
+
+.navigation__header {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f00;
+
+}
+
+/*.navigation__menu {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+.navigation__menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__menu ul li{
+   padding: 20px;
+    /*border-top: 1px solid #f00;*/
+    border-bottom: 1px solid #f00;
 }
