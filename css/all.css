@@ -28,7 +28,6 @@ footer {
 
 #bio {
     width: 470px;
-    /*height: 470px;*/
     background-color: white;
     position: absolute;
     top: 50%;
@@ -58,14 +57,14 @@ footer {
 .bio-content p {
     margin: 0;
     padding-top: 10px;
-
 }
 
 .bio-footer {
     padding-top: 10px;
 }
 
-.bio-footer a, .feedback-user-photo-description a {
+.bio-footer a,
+.feedback-user-photo-description a {
     color: #26C17E;
 }
 
@@ -77,10 +76,7 @@ inner style
 .container {
     display: flex;
     flex-flow: row nowrap;
-    /*todo max width*/
     max-width: 1150px;
-    /*border: 10px solid chartreuse;*/
-    /*padding: 40px;*/
     margin-left: 292px;
 }
 
@@ -89,10 +85,6 @@ inner style
 /*about*/
 #about {
     border: 1px solid #f00;
-}
-
-#about h2 {
-
 }
 
 .content {
@@ -286,7 +278,6 @@ additional fonts style
 #navigation {
     min-height: 100%;
     width: 250px;
-    /*background-color: chocolate;*/
     padding: 0;
     margin: 0;
     order: 1;
