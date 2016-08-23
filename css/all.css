@@ -1,10 +1,27 @@
-body {
+html, body {
     height: 100%;
+    width: 100%;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
     color: #000;
+    background: url("../images/bg.jpg") center;
+    position: relative;
+}
+
+body::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+    content: "\0020";
 }
 
 a {
@@ -28,24 +45,26 @@ footer {
 
 #bio {
     width: 470px;
-    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -235px 0 0 -235px;
-    border: 1px solid #f00;
     text-align: center;
+    color: white;
 }
 
 .bio-header img {
+    border-radius: 100px;
     height: 200px;
     width: 200px;
+    border: 1px solid #fff;
 }
 
 .bio-header h1 {
     margin: 0;
     padding-top: 10px;
     font: 45px/48px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    font-weight: 700;
 }
 
 .bio-header h2 {
@@ -59,11 +78,26 @@ footer {
     padding-top: 10px;
 }
 
-.bio-footer {
-    padding-top: 10px;
+.bio-button {
+    margin-top: 10px;
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
 }
 
-.bio-footer a,
+.bio-button:hover {
+    background-color: #26C17E; /* Green */
+    color: white;
+}
+
+.bio-button a {
+    color: white;
+}
+
 .feedback-user-photo-description a {
     color: #26C17E;
 }
@@ -273,7 +307,6 @@ additional fonts style
     font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', 'sans-serif';
 }
 
-
 /*navigarion*/
 #navigation {
     min-height: 100%;
@@ -287,7 +320,7 @@ additional fonts style
     left: 0;
 }
 
-.navi-photo img{
+.navi-photo img {
     height: 100px;
     width: 100px;
 }
@@ -306,13 +339,13 @@ additional fonts style
     /*display: flex;*/
 }
 
-.navigation-menu ul{
+.navigation-menu ul {
     margin: 0;
     padding: 0;
 }
 
-.navigation-menu ul li{
-   padding: 20px;
+.navigation-menu ul li {
+    padding: 20px;
     /*border-top: 1px solid #f00;*/
     border-bottom: 1px solid #f00;
 }
