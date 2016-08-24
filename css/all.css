@@ -24,6 +24,10 @@ body::before {
     content: "\0020";
 }
 
+.inner {
+    background-color: #eeeeee;
+}
+
 a {
     text-decoration: none;
 }
