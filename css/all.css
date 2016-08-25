@@ -368,22 +368,18 @@ additional fonts style
     margin-left: 75px;
 }
 
-.navigation-menu a:active{
-    color: #26C17E;
-}
-
-.navigation-menu a:hover{
+.navigation-menu a:link{
     color: #ffffff;
 }
 
 .navigation-menu a:visited {
-    color: #667081;
+    color: #ffffff;
 }
 
-.navigation-menu a:link{
-    color: #667081;
+.navigation-menu a:hover{
+    color: #26C17E;
 }
 
-.fa-rss, .fa-location-arrow, .fa-suitcase, .fa-diamond, .fa-pencil, .fa-graduation-cap, .fa-qq {
-    color: #667081;
+.navigation-menu a:active{
+    color: #ffffff;
 }
