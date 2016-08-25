@@ -8,12 +8,14 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
-    color: #000;
+}
+
+.body-index {
     background: url("../images/bg.jpg") center;
     position: relative;
 }
 
-body::before {
+.body-overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -21,11 +23,10 @@ body::before {
     left: 0;
     background: rgb(0, 0, 0);
     opacity: 0.7;
-    content: "\0020";
 }
 
-.inner {
-    background-color: #eeeeee;
+.body-inner {
+    background-color: #ffffff;
 }
 
 a {
@@ -58,9 +59,9 @@ footer {
 }
 
 .bio-header img {
-    border-radius: 100px;
     height: 200px;
     width: 200px;
+    border-radius: 100px;
     border: 1px solid #fff;
 }
 
@@ -105,7 +106,6 @@ footer {
 .feedback-user-photo-description a {
     color: #26C17E;
 }
-
 
 /*
 inner style
@@ -309,10 +309,13 @@ additional fonts style
     padding-bottom: 50px;
     margin: 0;
     font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', 'sans-serif';
+    color: #26C17E;
+    /*font-weight: 500;*/
 }
 
-/*navigarion*/
+/*navigation*/
 #navigation {
+    background-color: #000614;
     min-height: 100%;
     width: 250px;
     padding: 0;
@@ -327,6 +330,8 @@ additional fonts style
 .navi-photo img {
     height: 100px;
     width: 100px;
+    border-radius: 50px;
+    border: 1px solid #fff;
 }
 
 .navigation-header {
@@ -336,11 +341,10 @@ additional fonts style
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #f00;
-
+    color: white;
 }
 
 .navigation-menu {
-    /*display: flex;*/
 }
 
 .navigation-menu ul {
@@ -350,19 +354,36 @@ additional fonts style
 
 .navigation-menu ul li {
     padding: 20px;
-    /*border-top: 1px solid #f00;*/
     border-bottom: 1px solid #f00;
 }
 
 .navigation-footer {
     position: absolute;
     bottom: 20px;
-    /*width: 100%;*/
     text-align: center;
 }
 
 .navigation-footer {
-    border: 1px solid #f00;
     padding: 5px 15px;
     margin-left: 75px;
+}
+
+.navigation-menu a:active{
+    color: #26C17E;
+}
+
+.navigation-menu a:hover{
+    color: #ffffff;
+}
+
+.navigation-menu a:visited {
+    color: #667081;
+}
+
+.navigation-menu a:link{
+    color: #667081;
+}
+
+.fa-rss, .fa-location-arrow, .fa-suitcase, .fa-diamond, .fa-pencil, .fa-graduation-cap, .fa-qq {
+    color: #667081;
 }
