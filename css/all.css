@@ -25,26 +25,29 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
 
 /*CSS GENERAL*/
 html, body {
@@ -55,9 +58,15 @@ html, body {
 body {
     margin: 0;
     padding: 0;
+    font-family: FontAwesome;
     font-family: 'Open Sans', sans-serif;
     font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
 }
+
+@font-face {
+    font-family: FontAwesome;
+}
+
 
 .body-index {
     background-position: center;
@@ -147,9 +156,7 @@ a {
     color: #26C17E;
 }
 
-/*
-inner style
-*/
+/*INNER STYLE*/
 
 .container {
     display: flex;
@@ -171,10 +178,6 @@ inner style
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 40px;
-}
-
-.content-text {
-    margin: 0;
 }
 
 /*education*/
@@ -352,7 +355,6 @@ additional fonts style
     margin: 0;
     font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', 'sans-serif';
     color: #26C17E;
-    /*font-weight: 500;*/
 }
 
 /*navigation*/

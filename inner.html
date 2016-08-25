@@ -136,15 +136,21 @@
             <!--skills block-->
             <section id="skills">
                 <h3 class="content-head">Skills</h3>
-                <form>
+
+                <form action=index.html" method="post">
                     <fieldset class="add-skill">
                         <label for="s_name">Skill name:</label>
-                        <input type="text" name="add_skill" id="s_name" placeholder="enter skill name">
+                        <input id="s_name" name="s_name" type="text" title="enter skill name"
+                               placeholder="enter skill name" required pattern="[a-zA-Z]+">
                         <br>
-                        <label for="s_range">Skill range:</label>
-                        <input type="text" name="add_range" id="s_range" placeholder="enter skill range">
+
+                        <label for="range">Skill range:</label>
+                        <input id="range" name="range" title="enter range skill" type="text"
+                               placeholder="enter skill range" required min="1" max="10">
                         <br>
-                        <input type="button" value="Add skill">
+
+                        <button type="submit">Add skill</button>
+                        <!--<input type="submit" value="Add skill">-->
                     </fieldset>
                 </form>
 
@@ -152,9 +158,8 @@
                     <div class="skill-name">HTML</div>
                     <div class="skill-name">CSS</div>
                     <div class="skill-name">jQuery</div>
-                    <div class="skill-name">PHP</div>
-                    <div class="skill-name">Laravel 2 (framework)</div>
                 </div>
+
                 <div class="skills-level">
                     <div class="level left">Beginner</div>
                     <div class="level left">Proficient</div>
@@ -242,7 +247,7 @@
 
                             <div class="feedback-user-photo-description">
                                 <p>
-                                    Martin Friman Programmer, <a target="#somesite">Somesite.com</a>
+                                    Martin Friman Programmer, <a target="#somesite.com">Somesite.com</a>
                                 </p>
                             </div>
 
@@ -270,7 +275,7 @@
 
                             <div class="feedback-user-photo-description">
                                 <p>
-                                    Programmer, <a target="#somesite">Somesite.com</a>
+                                    Programmer, <a target="#somesite.com">Somesite.com</a>
                                 </p>
                             </div>
 
@@ -298,7 +303,7 @@
 
                             <div class="feedback-user-photo-description">
                                 <p>
-                                    Programmer, <a target="#somesite">Somesite.com</a>
+                                    Programmer, <a target="somesite.com">Somesite.com</a>
                                 </p>
                             </div>
 
