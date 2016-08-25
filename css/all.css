@@ -11,7 +11,9 @@ body {
 }
 
 .body-index {
-    background: url("../images/bg.jpg") center;
+    background-position: center;
+    background-image: url("../images/bg.jpg");
+    /*background-size: cover;*/
     position: relative;
 }
 
@@ -286,6 +288,8 @@ inner style
 .feedback-user-photo img {
     height: 50px;
     width: 50px;
+    border-radius: 25px;
+    border: 1px solid #f00;
 }
 
 .feedback-area {
