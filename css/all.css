@@ -169,14 +169,12 @@ a {
 
 /*about*/
 #about {
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
 }
 
 .content {
     order: 2;
     max-width: 820px;
-    margin-left: 40px;
-    margin-right: 40px;
     margin-top: 40px;
 }
 
@@ -184,11 +182,28 @@ a {
 #education {
     margin-top: 40px;
     padding-bottom: 10px;
-    border: 1px solid #f00;
+    position: relative;
+    /*border: 1px solid #f00;*/
 }
 
-#education article:nth-child(2n+1) {
-    padding-top: 10px;
+#education::before {
+    content: "\0020";
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 4px;
+    height: 90%;
+    background-color: #26C17E;
+}
+
+.education-wrapper {
+    position: relative;
+    max-height: 420px;
+    overflow: auto;
+}
+
+#education article {
+    padding-bottom: 10px;
 }
 
 .education {
@@ -196,7 +211,9 @@ a {
 }
 
 .education-year {
+    padding-top: 15px;
     width: 10%;
+    height: 100%;
     margin: 0;
 }
 
@@ -210,23 +227,37 @@ a {
 
 .education-year ul li h4 {
     font-weight: 700;
+    background: #fff;
 }
 
-.education-title {
-    width: 90%;
-    border: 1px solid #f00;
+.education-history {
+    position: relative;
+    width: 85%;
     margin: 0;
     background-color: #eeeeee;
 }
 
-.education-title h4 {
+.education-history::before {
+    position: absolute;
+    content: "\0020";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 15.6px 9px 0;
+    border-color: transparent #eeeeee transparent transparent;
+    left: -15px;
+    top: 15px;
+}
+
+.education-history h4 {
     padding: 15px 15px 5px;
     margin: 0;
     font: 16px/19px 'open_sansbold', 'Arial', 'Tahoma';
     font-weight: 700;
 }
 
-.education-title p {
+.education-history p {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -305,11 +336,12 @@ a {
 }
 
 .contact-fb, .contact-skype, .contact-twitter {
- display: flex;
+    display: flex;
 }
+
 /*feedback*/
 #feedback {
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
     margin-top: 40px;
 }
 
@@ -455,4 +487,18 @@ additional fonts style
 
 .navigation-menu ul li a i {
     width: 30px;
+}
+
+.hide-menu {
+    display: flex;
+    padding-top: 10px;
+}
+
+.hide-menu a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+    padding: 10px 10px;
+    background-color: #000000;
+    font-size: 19px;
 }
