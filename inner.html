@@ -141,11 +141,11 @@
                     <fieldset class="add-skill">
                         <label for="s_name">Skill name:</label>
                         <input id="s_name" name="s_name" type="text" title="enter skill name"
-                               placeholder="enter skill name" required pattern="[a-zA-Z]+">
+                               placeholder="enter skill name" required pattern="^[a-zA-Z]+$" size="30">
                         <br>
 
                         <label for="range">Skill range:</label>
-                        <input id="range" name="range" title="enter range skill" type="text"
+                        <input id="range" name="range" size="30" title="enter range skill" type="number"
                                placeholder="enter skill range" required min="1" max="10">
                         <br>
 
@@ -185,42 +185,39 @@
             <section id="contacts">
                 <h3 class="content-head">Contacts</h3>
 
-                <span>
-                 <i class="fa fa-phone" aria-hidden="true"></i>
-                500 345 242
-                </span>
+                <div class="contact-number">
+                    <i class="fa fa-phone"></i>
+                    <span>500 345 242</span>
+                </div>
 
-                <br>
+                <div class="contact-email">
+                    <i class="fa fa-envelope"></i>
+                    <span>office@kansolutions.pl</span>
+                </div>
 
-                <span>
-                <i class="fa fa-inbox" aria-hidden="true"></i>
-                office@kansolutions.pl
-                </span>
+                <div class="contact-twitter">
+                    <i class="fa fa-twitter"></i>
+                    <div class="twitter">
+                        <span>Twitter</span><br>
+                        <a href="https://twitter.com/WordPress">https://twitter.com/WordPress</a>
+                    </div>
+                </div>
 
-                <br>
+                <div class="contact-fb">
+                    <i class="fa fa-facebook"></i>
+                    <div class="facebook">
+                        <span>Facebook</span>
+                        <a href="https://facebook.com/WordPress">https://facebook.com/WordPress</a>
+                    </div>
+                </div>
 
-                <span>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                     Twitter
-                </span>
-                <br>
-                <a href="https://twitter.com/WordPress">https://twitter.com/WordPress</a>
-
-                <br>
-                <span>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                Facebook
-                </span>
-
-                <br>
-                <a href="https://facebook.com/WordPress">https://facebook.com/WordPress</a>
-                <br>
-                <span>
-                         <i class="fa fa-skype" aria-hidden="true"></i>
-                                Skype
-                 </span>
-                <br>
-                <span class="no-font-weight">kamsolutions.pl</span>
+                <div class="contact-skype">
+                    <i class="fa fa-skype"></i>
+                    <div class="skype">
+                        <span>Skype</span>
+                        <span class="no-font-weight">kamsolutions.pl</span>
+                    </div>
+                </div>
             </section>
 
 
@@ -321,7 +318,7 @@
                     <figure class="navi-photo">
                         <img src="images/logo_resize.jpg" alt="user-logo"/>
                         <figcaption>
-                            <h3>Oleg Chorpita</h3>
+                            <h3 class="navigation-photo-owner">Oleg Chorpita</h3>
                         </figcaption>
                     </figure>
                 </header>
@@ -331,41 +328,41 @@
                     <ul>
                         <li>
                             <a class="navi-links" title="About me" href="#about">
-                                <i class="fa fa-user-secret fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-user-secret" aria-hidden="true"></i>
                                 About me</a>
                         </li>
 
                         <li>
                             <a class="navi-links" title="Education" href="#education">
-                                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                 Education</a>
                         </li>
 
                         <li>
                             <a class="navi-links" title="Experience" href="#experience">
-                                <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
                                 Experience</a>
                         </li>
 
                         <li>
                             <a class="navi-links" title="Skills" href="#skills">
-                                <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-diamond" aria-hidden="true"></i>
                                 Skills</a>
                         </li>
 
                         <li>
                             <a class="navi-links" title="Portfolio" href="#portfolio">
-                                <i class="fa fa-suitcase fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-suitcase" aria-hidden="true"></i>
                                 Portfolio</a>
                         </li>
                         <li>
                             <a class="navi-links" title="Contacts" href="#contacts">
-                                <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-location-arrow" aria-hidden="true"></i>
                                 Contacts</a>
                         </li>
                         <li>
                             <a class="navi-links" title="Feedback's" href="#feedbacks">
-                                <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-rss" aria-hidden="true"></i>
                                 Feedback's</a>
 
                         </li>
