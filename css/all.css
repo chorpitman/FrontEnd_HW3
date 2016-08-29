@@ -70,7 +70,6 @@ body {
 .body-index {
     background-position: center;
     background-image: url("../images/bg.jpg");
-    /*background-size: cover;*/
     position: relative;
 }
 
@@ -148,7 +147,7 @@ a {
     color: white;
 }
 
-.bio-button a {
+.bio-button a{
     color: white;
 }
 
@@ -266,7 +265,7 @@ a {
 
 /*experience*/
 #experience {
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
     margin-top: 40px;
 }
 
@@ -275,7 +274,7 @@ a {
 }
 
 .experience-wrapper:nth-child(2n+1) {
-    border-top: 1px solid #f00;
+    /*border-top: 1px solid #f00;*/
     padding-top: 15px;
 }
 
@@ -304,8 +303,24 @@ a {
 
 /*skills*/
 #skills {
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
     margin-top: 40px;
+}
+.add-skill {
+    padding: 10px;
+    border: 1px solid #26c17e;
+}
+.add-skill button {
+    margin: 20px 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /*portfolio*/
