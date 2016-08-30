@@ -147,7 +147,7 @@ a {
     color: white;
 }
 
-.bio-button a{
+.bio-button a {
     color: white;
 }
 
@@ -305,39 +305,47 @@ a {
 #skills {
     margin-top: 40px;
 }
+
 .add-skill {
     padding: 10px;
+    margin-bottom: 30px;
     border: 1px solid #26c17e;
 }
+
 .add-skill input {
- width: 80%;
-    border: 0px;
+    width: 80%;
+    border: 1px red solid;
     margin: 10px 20px;
     align-items: right;
     height: 30px;
 }
 
-/* skill scale*/
-.skills-list input {
-     height: 30px;
-     background-color: #26c17e;
-     border: 2px solid red;
-     border-radius: 5px;
-     color: red;
-}
-
-/*placeholder*/
-.skills-list input::-webkit-input-placeholder {
- color: white
+.divscale, .divscale1, .divscale2, .divscale3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: #26c17e;
+    color: white;
+    height: 30px;
+    /*vertical-align: middle;*/
+    /*align-content: center;*/
 }
 
 .divscale {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    background-color: #26c17e;
-    color: white;
-    width:100%;
-    vertical-align: middle;
+    width: 100%;
+}
+
+.divscale1 {
+    width: 87%;
+}
+
+.divscale2 {
+    width: 78%;
+}
+
+.divscale3 {
+    width: 92%;
 }
 
 .add-skill button {
