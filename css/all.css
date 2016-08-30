@@ -303,13 +303,43 @@ a {
 
 /*skills*/
 #skills {
-    /*border: 1px solid #f00;*/
     margin-top: 40px;
 }
 .add-skill {
     padding: 10px;
     border: 1px solid #26c17e;
 }
+.add-skill input {
+ width: 80%;
+    border: 0px;
+    margin: 10px 20px;
+    align-items: right;
+    height: 30px;
+}
+
+/* skill scale*/
+.skills-list input {
+     height: 30px;
+     background-color: #26c17e;
+     border: 2px solid red;
+     border-radius: 5px;
+     color: red;
+}
+
+/*placeholder*/
+.skills-list input::-webkit-input-placeholder {
+ color: white
+}
+
+.divscale {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background-color: #26c17e;
+    color: white;
+    width:100%;
+    vertical-align: middle;
+}
+
 .add-skill button {
     margin: 20px 10px;
     background-color: #000000;
