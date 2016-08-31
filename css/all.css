@@ -324,7 +324,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     background-color: #26c17e;
     color: white;
     height: 30px;
@@ -359,6 +359,32 @@ a {
     display: inline-block;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.skills-level {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-level-border {
+    height: 10px;
+    border: 2px solid red;
+}
+
+.skills-level div {
+    width: 25%;
+}
+
+.skills-level-border:nth-child(-n+2) {
+    height: 10px;
+    border-left: 2px solid red;
+    border-top: 1px solid red;
+}
+
+.skills-level-border:nth-child(n+3) {
+height: 10px;
+border-right: 2px solid red;
+border-bottom: 1px solid red;
 }
 
 /*portfolio*/
