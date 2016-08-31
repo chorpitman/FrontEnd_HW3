@@ -40,7 +40,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
+    content: '\0020';
     content: none;
 }
 
@@ -234,6 +234,7 @@ a {
     width: 85%;
     margin: 0;
     background-color: #eeeeee;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .education-history::before {
@@ -314,38 +315,39 @@ a {
 
 .add-skill input {
     width: 80%;
-    border: 1px red solid;
     margin: 10px 20px;
     align-items: right;
     height: 30px;
 }
 
-.divscale, .divscale1, .divscale2, .divscale3 {
+.skill-1, .skill-2, .skill-3, .skill-4, .skill-5  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5px;
     background-color: #26c17e;
     color: white;
-    height: 30px;
-    /*vertical-align: middle;*/
-    /*align-content: center;*/
+    height: 32px;
 }
 
-.divscale {
+.skill-1 {
     width: 100%;
 }
 
-.divscale1 {
+.skill-2 {
     width: 87%;
 }
 
-.divscale2 {
+.skill-3 {
     width: 78%;
 }
 
-.divscale3 {
+.skill-4 {
     width: 92%;
+}
+
+.skill-5 {
+    width: 30%;
 }
 
 .add-skill button {
@@ -361,30 +363,39 @@ a {
     cursor: pointer;
 }
 
-.skills-level {
+.skills-scale-border {
+    display: flex;
+    height: 10px;
+}
+
+.skills-scale-border-left {
+    width: 25%;
+    border-left: solid 2px #DDDDDD;
+    border-bottom: solid 2px #DDDDDD;
+}
+
+.skills-scale-border-right {
+    width: 25%;
+    border-right: solid 2px #DDDDDD;
+    border-bottom: solid 2px #DDDDDD;
+}
+
+.skills-scale-name {
+    color: #DDDDDD;
     display: flex;
     flex-direction: row;
 }
 
-.skills-level-border {
-    height: 10px;
-    border: 2px solid red;
-}
-
-.skills-level div {
+.skills-scale-name div {
     width: 25%;
 }
 
-.skills-level-border:nth-child(-n+2) {
-    height: 10px;
-    border-left: 2px solid red;
-    border-top: 1px solid red;
+.level-beginner, .level-proficient {
+    text-align: left;
 }
 
-.skills-level-border:nth-child(n+3) {
-height: 10px;
-border-right: 2px solid red;
-border-bottom: 1px solid red;
+.level-expert, .level-master {
+    text-align: right;
 }
 
 /*portfolio*/
