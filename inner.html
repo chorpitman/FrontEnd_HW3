@@ -15,12 +15,6 @@
     <div class="container">
         <div class="content">
 
-            <!--Hide menu-->
-            <div class="hide-menu">
-                <a href="#about"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            </div>
-
-
             <!--INFO ABOUT SECTION http://html5book.ru/html5-semantic-elements/#part4-->
             <!--about block-->
             <section id="about">
@@ -238,8 +232,8 @@
                     <!--first row-->
                     <div class="portfolio-wrapper">
 
-                        <div class="img">
-                            <img class="image" src="images/portfolio.jpg">
+                        <div class="portfolio-img">
+                            <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -254,8 +248,8 @@
                             </div>
                         </div>
 
-                        <div class="img">
-                            <img class="image" src="images/portfolio1.jpg">
+                        <div class="portfolio-img">
+                            <img class="portfolio-image" src="images/portfolio1.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -275,8 +269,8 @@
                     <!--second row-->
                     <div class="portfolio-wrapper">
 
-                        <div class="img">
-                            <img class="image" src="images/portfolio1.jpg">
+                        <div class="portfolio-img">
+                            <img class="portfolio-image" src="images/portfolio1.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -291,8 +285,8 @@
                             </div>
                         </div>
 
-                        <div class="img">
-                            <img class="image" src="images/portfolio.jpg">
+                        <div class="portfolio-img">
+                            <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -313,8 +307,8 @@
                     <div class="portfolio-wrapper">
 
                         <!--todo rename classes in this section-->
-                        <div class="img">
-                            <img class="image" src="images/portfolio.jpg">
+                        <div class="portfolio-img">
+                            <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -329,8 +323,8 @@
                             </div>
                         </div>
 
-                        <div class="img">
-                            <img class="image" src="images/portfolio1.jpg">
+                        <div class="portfolio-img">
+                            <img class="portfolio-image" src="images/portfolio1.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -346,8 +340,6 @@
                         </div>
 
                     </div>
-
-
                 </div>
             </section>
 
@@ -356,48 +348,67 @@
             <section id="contacts">
                 <h3 class="content-head">Contacts</h3>
 
-                <div class="contact-icon">
-                    <i class="fa fa-phone fa-lg"></i>
-                </div>
+                <!--contact number-->
+                <div class="contact-wrapper">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone fa-2x"></i>
+                    </div>
 
-                <div class="contact-number">
-                    <span>500 345 242</span>
-                </div>
-
-                <!---->
-                <div class="contact-icon">
-                    <i class="fa fa-envelope fa-lg"></i>
-                </div>
-                <div class="contact-email">
-                    <span>office@kansolutions.pl</span>
-                </div>
-
-
-
-
-                <div class="contact-twitter">
-                    <i class="fa fa-twitter fa-lg"></i>
-                    <div class="twitter">
-                        <span>Twitter</span><br>
-                        <a href="https://twitter.com/WordPress">https://twitter.com/WordPress</a>
+                    <div class="contact-number">
+                        <span>500 345 242</span>
                     </div>
                 </div>
 
-                <div class="contact-fb">
-                    <i class="fa fa-facebook fa-lg"></i>
-                    <div class="facebook">
+                <!--contact email-->
+                <div class="contact-wrapper">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope fa-2x"></i>
+                    </div>
+
+                    <div class="contact-email">
+                        <span>office@kansolutions.pl</span>
+                    </div>
+                </div>
+
+                <!--contact twitter-->
+                <div class="contact-wrapper">
+                    <div class="contact-icon">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </div>
+
+                    <div class="contact-twitter">
+                        <span>Twitter</span>
+                        <br>
+                        <a href="#" class="contact-light-font">https://twitter.com/WordPress</a>
+                    </div>
+                </div>
+
+                <!--contact fb-->
+                <div class="contact-wrapper">
+                    <div class="contact-icon">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </div>
+
+                    <div class="contact-fb">
                         <span>Facebook</span>
-                        <a href="https://facebook.com/WordPress">https://facebook.com/WordPress</a>
+                        <br>
+                        <a href="#" class="contact-light-font">https://facebook.com/WordPress</a>
                     </div>
                 </div>
 
-                <div class="contact-skype">
-                    <i class="fa fa-skype fa-lg"></i>
-                    <div class="skype">
+                <!--contact skype-->
+                <div class="contact-wrapper">
+                    <div class="contact-icon">
+                        <i class="fa fa-skype fa-2x"></i>
+                    </div>
+
+                    <div class="contact-number">
                         <span>Skype</span>
-                        <span class="no-font-weight">kamsolutions.pl</span>
+                        <br>
+                        <a href="#" class="contact-light-font">kamsolutions.pl</a>
                     </div>
                 </div>
+
             </section>
 
 
@@ -487,12 +498,46 @@
                         </li>
                     </ul>
                 </div>
+
+                <!--fourth feedback-->
+                <div class="feedback-wrapper">
+                    <ul>
+                        <li class="test-wrapper">
+                            <div class="feedback-user-photo">
+                                <img src="images/uphoto_resize.png" alt="user_photos"/>
+                            </div>
+
+                            <div class="feedback-area">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat fugit hic
+                                    magnam
+                                    minus neque sit vel. Enim ipsum nemo neque saepe! A error minima officiis sit! Modi
+                                    obcaecati, quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+                                    explicabo non! Alias animi doloribus ducimus harum, impedit nesciunt sint ullam
+                                    voluptatibus! Adipisci aliquam consequuntur ea error ipsa ullam vel veniam."
+                                </p>
+                            </div>
+
+                            <div class="feedback-user-photo-description">
+                                <p>
+                                    Programmer, <a target="somesite.com">Somesite.com</a>
+                                </p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
             </section>
+
+            <!--bottom button-->
+            <div class="back-to-top">
+                <a href="#about"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            </div>
         </div>
 
         <!-- navigation block (left menu)-->
         <div id="navigation">
-            <!--This is block user foto and her name-->
+
+            <!--This is block user foto and his name-->
             <aside id="navigation-menu">
                 <header class="navigation-header">
                     <figure class="navi-photo">
@@ -541,7 +586,7 @@
                                 Contacts</a>
                         </li>
                         <li>
-                            <a class="navi-links" title="Feedback's" href="#feedbacks">
+                            <a class="navi-links" title="Feedback's" href="#feedback">
                                 <i class="fa fa-rss fa-lg" aria-hidden="true"></i>
                                 Feedback's</a>
 
@@ -555,6 +600,12 @@
                         Go back</a>
                 </footer>
             </aside>
+
+            <!--Hide menu-->
+            <div class="hide-menu">
+                <a href="#about"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+
         </div>
     </div>
 </div>

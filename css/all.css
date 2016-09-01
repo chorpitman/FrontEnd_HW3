@@ -9,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
     display: block;
 }
 
@@ -318,7 +318,8 @@ a {
     height: 30px;
 }
 
-.skill-1, .skill-2, .skill-3, .skill-4, .skill-5  {
+.skill-1, .skill-2, .skill-3, .skill-4, .skill-5 {
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,15 +334,15 @@ a {
 }
 
 .skill-2 {
-    width: 87%;
+    width: 80%;
 }
 
 .skill-3 {
-    width: 78%;
+    width: 60%;
 }
 
 .skill-4 {
-    width: 92%;
+    width: 40%;
 }
 
 .skill-5 {
@@ -400,75 +401,76 @@ a {
 #portfolio {
     margin-top: 40px;
 }
+
 .portfolio-wrapper {
 
 }
 
-.img {
-margin: 5px;
-position: relative;
-overflow: hidden;
-height: 200px;
-width: 300px;
-display: inline-block;
+.portfolio-img {
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
 
 }
 
 .portfolio-navi {
-font-size: 15px;
+    font-size: 15px;
 }
 
 .portfolio-navi a {
-font-weight: 700;
-margin-bottom: 15px;
-color:#26C17E;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #26C17E;
 }
 
-.img a {
-color: #26C17E;
-padding-left: 30px;
-text-align: left;
+.portfolio-img a {
+    color: #26C17E;
+    padding-left: 30px;
+    text-align: left;
 }
 
-.img:hover .portfolio-text {
-bottom: 0px;
+.portfolio-img:hover .portfolio-text {
+    bottom: 0px;
 }
 
-.image {
-height: 200px;
-width: 300px;
-position: absolute;
-opacity: 0.8;
-border: 1px solid #DDDDDD;
+.portfolio-image {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    opacity: 0.8;
+    border: 1px solid #DDDDDD;
 }
 
 .portfolio-text {
-height: 200px;
-width: 300px;
-position: absolute;
-text-align: justify;
-background: #222935;
-opacity: 0.9;
-bottom: -250px;
-transition: 0.5s all;
-border: 1px solid #26C17E;
-color: white;
-font-size: 15px;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    text-align: justify;
+    background: #222935;
+    opacity: 0.9;
+    bottom: -250px;
+    transition: 0.5s all;
+    border: 1px solid #26C17E;
+    color: white;
+    font-size: 15px;
 }
 
 .portfolio-text p {
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 10px;
-padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .portfolio-header {
-color: #26C17E;
-font-weight: 700;
-margin-top: 10px;
-padding-left: 30px;
-text-align: left
+    color: #26C17E;
+    font-weight: 700;
+    margin-top: 10px;
+    padding-left: 30px;
+    text-align: left
 }
 
 .portfolio-content-wrapper ul {
@@ -484,25 +486,24 @@ text-align: left
 #contacts {
     margin-top: 40px;
 }
-/*
+
 #contacts i {
-    margin: 15px;
-    width: 30px;
     color: #26C17E;
 }
 
-.contact-fb, .contact-skype, .contact-twitter {
+.contact-wrapper {
     display: flex;
-}
-*/
-.contact-icon {
-display: inline;
-width: 10%;
+    padding-bottom: 15px;
+    font-weight: bold;
 }
 
-.contact-number .contact-email {
-display: inline;
-width:80%;
+.contact-icon {
+    width: 7%;
+}
+
+.contact-light-font {
+    color: #667081;
+    font-weight: 500;
 }
 
 /*feedback*/
@@ -516,7 +517,6 @@ width:80%;
 }
 
 .feedback-wrapper {
-    border: solid red 1px;
     margin-bottom: 30px;
 }
 
@@ -543,7 +543,6 @@ width:80%;
     height: 50px;
     width: 50px;
     border-radius: 25px;
-    border: 1px solid #f00;
 }
 
 .feedback-area {
@@ -655,8 +654,9 @@ additional fonts style
 }
 
 .hide-menu {
-    display: flex;
-    padding-top: 10px;
+    position: absolute;
+    right: -33px;
+    top: 10px;
 }
 
 .hide-menu a {
@@ -664,6 +664,40 @@ additional fonts style
     border-bottom-right-radius: 5px;
     display: block;
     padding: 10px 10px;
-    background-color: #000000;
+    background-color: #000614;
     font-size: 19px;
 }
+
+
+
+/*button*/
+.back-to-top {
+    color: #26C17E;
+    width: 42px;
+    margin-left: auto;
+}
+.back-to-top a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    padding: 8px 12px 8px;
+    background-color: #000614;
+    font-size: 15px;
+}
+
+.back-to-top a:link {
+    color: #ffffff;
+}
+
+.back-to-top a:visited {
+    color: #ffffff;
+}
+
+.back-to-top a:hover {
+    color: #26C17E;
+}
+
+.back-to-top a:active {
+    color: #ffffff;
+}
+
