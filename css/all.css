@@ -266,7 +266,6 @@ a {
 
 /*experience*/
 #experience {
-    /*border: 1px solid #f00;*/
     margin-top: 40px;
 }
 
@@ -275,7 +274,6 @@ a {
 }
 
 .experience-wrapper:nth-child(2n+1) {
-    /*border-top: 1px solid #f00;*/
     padding-top: 15px;
 }
 
@@ -402,6 +400,76 @@ a {
 #portfolio {
     margin-top: 40px;
 }
+.portfolio-wrapper {
+
+}
+
+.img {
+margin: 5px;
+position: relative;
+overflow: hidden;
+height: 200px;
+width: 300px;
+display: inline-block;
+
+}
+
+.portfolio-navi {
+font-size: 15px;
+}
+
+.portfolio-navi a {
+font-weight: 700;
+margin-bottom: 15px;
+color:#26C17E;
+}
+
+.img a {
+color: #26C17E;
+padding-left: 30px;
+text-align: left;
+}
+
+.img:hover .portfolio-text {
+bottom: 0px;
+}
+
+.image {
+height: 200px;
+width: 300px;
+position: absolute;
+opacity: 0.8;
+border: 1px solid #DDDDDD;
+}
+
+.portfolio-text {
+height: 200px;
+width: 300px;
+position: absolute;
+text-align: justify;
+background: #222935;
+opacity: 0.9;
+bottom: -250px;
+transition: 0.5s all;
+border: 1px solid #26C17E;
+color: white;
+font-size: 15px;
+}
+
+.portfolio-text p {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.portfolio-header {
+color: #26C17E;
+font-weight: 700;
+margin-top: 10px;
+padding-left: 30px;
+text-align: left
+}
 
 .portfolio-content-wrapper ul {
     margin: 0;
@@ -414,10 +482,9 @@ a {
 
 /*contacts*/
 #contacts {
-    border: 1px solid #f00;
     margin-top: 40px;
 }
-
+/*
 #contacts i {
     margin: 15px;
     width: 30px;
@@ -426,6 +493,16 @@ a {
 
 .contact-fb, .contact-skype, .contact-twitter {
     display: flex;
+}
+*/
+.contact-icon {
+display: inline;
+width: 10%;
+}
+
+.contact-number .contact-email {
+display: inline;
+width:80%;
 }
 
 /*feedback*/
