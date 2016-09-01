@@ -507,7 +507,6 @@ width:80%;
 
 /*feedback*/
 #feedback {
-    /*border: 1px solid #f00;*/
     margin-top: 40px;
 }
 
@@ -548,11 +547,11 @@ width:80%;
 }
 
 .feedback-area {
-    /*margin: 0;*/
     padding: 15px;
     order: 1;
     width: 100%;
     background-color: #eeeeee;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .feedback-user-photo-description {
