@@ -1,0 +1,72 @@
+
+body {
+    background-color: #26C17E;
+    /*position: relative;*/
+    /*background-image: url("../images/bg.jpg")*/
+}
+
+/*body::after {*/
+    /*content: "sdasdsadasdasdasdds sdasd ";*/
+    /*display: block;*/
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*background: #1d1d1d;*/
+    /*opacity: 0.7;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.container {*/
+/*!*width: 400px;*!*/
+/*border: solid 1px crimson;*/
+/*background-color: #26C17E;*/
+/*display: flex;*/
+/*flex-flow: column wrap;*/
+/*}*/
+
+/*.container div {*/
+/*!*flex: 1;*!*/
+/*}*/
+
+/*.container div:nth-of-type(1n+2) {*/
+/*!*margin-left: 20px;*!*/
+/*}*/
+
+/*.photo {*/
+/*flex: 1;*/
+/*order: 2;*/
+/*}*/
+
+/*.text {*/
+/*flex: 4;*/
+/*order: 1;*/
+/*!*flex-wrap: nowrap;*!*/
+/*}*/
+
+/*.description {*/
+/*flex: 3;*/
+/*order: 3;*/
+/*}*/
+
+.container {
+    border: solid 1px crimson;
+    background-color: #26C17E;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.photo {
+    order: 2;
+}
+
+.text {
+    order: 1;
+    width: 100%;
+}
+
+.description {
+    order: 3;
+}
