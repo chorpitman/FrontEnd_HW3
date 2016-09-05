@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
-<head>
+<sc>
     <meta charset=UTF-8">
     <title>Oleg Chorpita - BIO</title>
     <link href="css/all.css" rel="stylesheet" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link href="fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/isotope.js"></script>
 </head>
 
 <body class="body-inner">
@@ -237,11 +240,11 @@
                 <div class="portfolio-content-wrapper">
                     <h3 class="content-head">Portfolio</h3>
                     <!--portfolio navi-->
-                    <nav class="portfolio-navi">
-                        <ul>
-                            <li><a href="#all">All</a> /</li>
-                            <li><a href="#code">Code</a> /</li>
-                            <li><a href="#ui">UI</a></li>
+                    <nav class="portfolio-navi button-group filters-button-group">
+                        <ul class="button-group filters-button-group">
+                            <li><button class="button is-checked" data-filter="*">All</button></li>
+                            <li><button class="button" data-filter=".metal">Code</button></li>
+                            <li><button class="button" data-filter=".transition">UI</button></li>
                         </ul>
                     </nav>
 
@@ -250,8 +253,7 @@
 
                     <!--first row-->
                     <div class="portfolio-wrapper">
-
-                        <div class="portfolio-img">
+                        <div class="portfolio-img element-item metal" data-category="metalloid">
                             <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -267,7 +269,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-img">
+                        <div class="portfolio-img element-item transition" data-category="transition">
                             <img class="portfolio-image" src="images/portfolio1.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -282,15 +284,14 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
                     <!--second row-->
                     <div class="portfolio-wrapper">
 
-                        <div class="portfolio-img">
+                        <div class="portfolio-img element-item transition" data-category="transition">
                             <img class="portfolio-image" src="images/portfolio1.jpg">
-                            <div class="portfolio-text">
+                            <div class="portfolio-text element-item transition">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
                                     dicta
@@ -304,7 +305,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-img">
+                        <div class="portfolio-img element-item metal" data-category="metalloid">
                             <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -319,13 +320,12 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
                     <!--third row-->
                     <div class="portfolio-wrapper">
 
-                        <div class="portfolio-img">
+                        <div class="portfolio-img element-item metal" data-category="metalloid">
                             <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -341,7 +341,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-img">
+                        <div class="portfolio-img element-item transition" data-category="transition">
                             <img class="portfolio-image" src="images/portfolio1.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
