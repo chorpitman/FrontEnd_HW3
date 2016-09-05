@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
-<sc>
+<head>
     <meta charset=UTF-8">
     <title>Oleg Chorpita - BIO</title>
-    <link href="css/all.css" rel="stylesheet" type="text/css"/>
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/all1.css" rel="stylesheet" type="text/css">-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link href="fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <script src="js/isotope.pkgd.min.js"></script>
+
     <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/isotope.js"></script>
+    <script src="js/isotope1.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+
 </head>
 
 <body class="body-inner">
@@ -240,20 +243,18 @@
                 <div class="portfolio-content-wrapper">
                     <h3 class="content-head">Portfolio</h3>
                     <!--portfolio navi-->
-                    <nav class="portfolio-navi button-group filters-button-group">
+                    <nav class="portfolio-navi">
                         <ul class="button-group filters-button-group">
-                            <li><button class="button is-checked" data-filter="*">All</button></li>
-                            <li><button class="button" data-filter=".metal">Code</button></li>
-                            <li><button class="button" data-filter=".transition">UI</button></li>
+                            <button data-filter="*">All /</button>
+                            <button data-filter=".ui">UI /</button>
+                            <button data-filter=".code">Code</button>
                         </ul>
                     </nav>
 
-
                     <!--portfolio content-->
-
                     <!--first row-->
-                    <div class="portfolio-wrapper">
-                        <div class="portfolio-img element-item metal" data-category="metalloid">
+                    <div class="grid">
+                        <div class="portfolio-img element-item code">
                             <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -269,7 +270,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-img element-item transition" data-category="transition">
+                        <div class="portfolio-img element-item ui">
                             <img class="portfolio-image" src="images/portfolio1.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -284,29 +285,10 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
 
-                    <!--second row-->
-                    <div class="portfolio-wrapper">
-
-                        <div class="portfolio-img element-item transition" data-category="transition">
+                        <!--second row-->
+                        <div class="portfolio-img element-item ui">
                             <img class="portfolio-image" src="images/portfolio1.jpg">
-                            <div class="portfolio-text element-item transition">
-                                <h4 class="portfolio-header">Some text</h4>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
-                                    dicta
-                                    dolore eligendi eveniet ex maiores neque nobis odit optio possimus qui quos, tempore
-                                    vel
-                                    veritatis vero voluptate, voluptates!</p>
-                                <a href="">
-                                    <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                    View resource
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-img element-item metal" data-category="metalloid">
-                            <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -320,12 +302,8 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
 
-                    <!--third row-->
-                    <div class="portfolio-wrapper">
-
-                        <div class="portfolio-img element-item metal" data-category="metalloid">
+                        <div class="portfolio-img element-item code">
                             <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
@@ -341,8 +319,9 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-img element-item transition" data-category="transition">
-                            <img class="portfolio-image" src="images/portfolio1.jpg">
+                        <!--third row-->
+                        <div class="portfolio-img element-item code">
+                            <img class="portfolio-image" src="images/portfolio.jpg">
                             <div class="portfolio-text">
                                 <h4 class="portfolio-header">Some text</h4>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
@@ -357,6 +336,21 @@
                             </div>
                         </div>
 
+                        <div class="portfolio-img element-item ui">
+                            <img class="portfolio-image" src="images/portfolio1.jpg">
+                            <div class="portfolio-text">
+                                <h4 class="portfolio-header">Some text</h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque
+                                    dicta
+                                    dolore eligendi eveniet ex maiores neque nobis odit optio possimus qui quos, tempore
+                                    vel
+                                    veritatis vero voluptate, voluptates!</p>
+                                <a href="">
+                                    <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                    View resource
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
