@@ -4,9 +4,9 @@
 
 $(function () {
     $('a[href^="#"]').on('click', function (event) {
-        debugger;
+
         var target = $(this.getAttribute('href'));
-        target.
+        alert(target)
         if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
