@@ -373,7 +373,7 @@ INNER STYLE
     height: 30px;
 }
 
-.skill-1, .skill-2, .skill-3, .skill-4, .skill-5 {
+.skill {
     padding-left: 5px;
     display: flex;
     flex-direction: column;
@@ -382,26 +382,27 @@ INNER STYLE
     background-color: #26c17e;
     color: white;
     height: 32px;
+    width: 0%;
 }
 
-.skill-1 {
-    width: 100%;
+.width-90 {
+    width: 90%;
 }
 
-.skill-2 {
-    width: 80%;
+.width-88 {
+    width: 88%;
 }
 
-.skill-3 {
-    width: 60%;
+.width-72 {
+    width: 72%;
 }
 
-.skill-4 {
-    width: 40%;
+.width-65 {
+    width: 65%;
 }
 
-.skill-5 {
-    width: 30%;
+.width-54 {
+    width: 54%;
 }
 
 .add-skill button {

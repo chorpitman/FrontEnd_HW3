@@ -196,16 +196,16 @@
             <section id="skills">
                 <h3 class="content-head">Skills</h3>
 
-                <form action=index.html" method="post">
+                <form method="post" class="validationForm"> <!--action=index.html" -->
                     <fieldset class="add-skill">
                         <label for="s_name">Skill name:</label>
                         <input id="s_name" name="s_name" type="text" title="enter skill name"
-                               placeholder="Enter skill name" required pattern="^[a-zA-Z]+$" size="30">
+                               placeholder="Enter skill name" required maxlength="100">
                         <br>
 
                         <label for="range">Skill range:</label>
                         <input id="range" name="range" size="30" title="enter range skill" type="number"
-                               placeholder="Enter skill range" required min="1" max="10">
+                               placeholder="Enter skill range" required min="1" max="100">
                         <br>
 
                         <button type="submit">Add skill</button>
@@ -214,11 +214,11 @@
 
                 <div class="skills-list">
                     <!--skills scale-->
-                    <div class="skill-1">HTML</div>
-                    <div class="skill-2">CSS</div>
-                    <div class="skill-3">jQuery</div>
-                    <div class="skill-4">PHP</div>
-                    <div class="skill-5">Angular2</div>
+                    <div class="skill width-90">HTML</div>
+                    <div class="skill width-88">CSS</div>
+                    <div class="skill width-72">jQuery</div>
+                    <div class="skill width-65">PHP</div>
+                    <div class="skill width-54">Angular2</div>
                 </div>
 
                 <div class="skills-scale-border">

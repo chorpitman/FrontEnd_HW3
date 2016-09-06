@@ -39,5 +39,29 @@ $(function () {
         });
       });
 
+// validation
+        $(".add-skill button").on("click", function(e) {
+
+//Отменяет событие, если оно отменяемое, без остановки дальнейшего распространения этого события.
+            var skillLength = $("#s_name").val();
+            var skillRange = $("#range").val();
+
+            if (skillLength.length > 100 ) {
+            alert("skillLength length should be less than 100 characters " + skillLength);
+            }
+            if (skillRange.length > 100) {
+            alert(" skillRange length should be less than 100 characters " + skillRange);
+            }
+
+            //valid form
+            var skillForm = $("#skills form")[0].checkValidity()
+            if (skillForm == true) {
+
+                $('.skills-list').append("<div class='skill' style='width:"+skillRange+"%'>"+skillLength+"</div>");
+                e.preventDefault();
+            }
+            })
+
+
     }
 )
