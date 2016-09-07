@@ -5,7 +5,6 @@
     <meta charset=UTF-8">
     <title>Oleg Chorpita - BIO</title>
     <link href="css/all.css" rel="stylesheet" type="text/css">
-    <!--<link href="css/all1.css" rel="stylesheet" type="text/css">-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link href="fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
@@ -14,16 +13,18 @@
     <script src="js/lib/isotope.pkgd.js"></script>
     <script src="js/app/skill.js"></script>
     <script src="js/app/scroll.js"></script>
-    <script src="js/app/test.js"></script>
+    <script src="js/app/close-sidebar.js"></script>
 
 </head>
+
+
 
 <body class="body-inner">
 
 <!--main container -->
 <div class="wrapper-container">
     <div class="container">
-        <div class="content">
+        <div id="content-bar" class="content open">
 
             <!--INFO ABOUT SECTION http://html5book.ru/html5-semantic-elements/#part4-->
             <!--about block-->
@@ -549,7 +550,7 @@
         </div>
 
         <!-- navigation block (left menu)-->
-        <div id="navigation">
+        <div id="navigation" class="open">
 
             <!--This is block user foto and his name-->
             <aside id="navigation-menu">
@@ -615,7 +616,7 @@
             </aside>
 
             <!--Hide menu-->
-            <div class="hide-menu">
+            <div id="h-menu-peek" class="hide-menu">
                 <a href="#about"><i class="fa fa-bars" aria-hidden="true"></i></a>
             </div>
         </div>
