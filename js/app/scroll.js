@@ -11,7 +11,7 @@ $(function () {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
-            }, 450);
+            }, 550);
 
             window.location.hash = '#' + target[0].id;
 
