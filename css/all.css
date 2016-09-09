@@ -201,13 +201,13 @@ INNER STYLE
 
 .education-wrapper {
     position: relative;
-    max-height: 420px;
+    height: 420px;
     overflow: auto;
 }
 
 #education article {
     padding-bottom: 10px;
-    width:100%;
+    width: 100%;
 }
 
 .education {
@@ -302,7 +302,7 @@ INNER STYLE
 
     100% {
         opacity: 1;
-        transform: rotate(-360deg)
+        transform: rotate(360deg)
     }
 }
 
@@ -886,6 +886,7 @@ RESPONSIVE
 #navigation .navi-links.active {
     color: #26C17E;
 }
+
 /*
 
 ISOTOP

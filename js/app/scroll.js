@@ -14,8 +14,11 @@ $(function () {
             }, 450);
 
             window.location.hash = '#' + target[0].id;
+
             console.log(this);
+
             $('.navi-links').removeClass('active');
+
             $(this).addClass('active');
 
         }
